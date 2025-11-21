@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBNB - Add Review</title>
+    <!-- Lien vers le fichier CSS principal -->
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+    <!-- ==============================
+         Header
+         ============================== -->
+    <header>
+        <img src="../static/images/logo.png" alt="HBNB Logo" class="logo">
+
+        <div class="header-nav">
+            <!-- Navigation principale -->
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+            </div>
+
+            <!-- Profil utilisateur (caché si non connecté) -->
+            <div class="user-profile" style="display: none;">
+                <span class="user-name"></span>
+                <svg class="logout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==============================
+         Main content
+         ============================== -->
+    <main>
+        <div class="form-container">
+            <h2>Add Review</h2>
+
+            <!-- Formulaire pour ajouter un avis -->
+            <form id="reviewForm">
+                <!-- Sélection de la note -->
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">Select a rating</option>
+                        <option value="1">⭐</option>
+                        <option value="2">⭐⭐</option>
+                        <option value="3">⭐⭐⭐</option>
+                        <option value="4">⭐⭐⭐⭐</option>
+                        <option value="5">⭐⭐⭐⭐⭐</option>
+                    </select>
+                </div>
+
+                <!-- Texte de l'avis -->
+                <div class="form-group">
+                    <label for="text">Review</label>
+                    <textarea id="text" name="text" required minlength="10" placeholder="Share your experience..."></textarea>
+                </div>
+
+                <!-- Bouton de soumission -->
+                <button type="submit" class="submit-btn">Submit Review</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- ==============================
+         Footer
+         ============================== -->
+    <footer class="footer-bottom">
+        <p>&copy; 2025 HBNB. All rights reserved.</p>
+    </footer>
+
+    <!-- ==============================
+         Scripts
+         ============================== -->
+    <script src="../static/scripts.js"></script>
+</body>
+
+</html>
