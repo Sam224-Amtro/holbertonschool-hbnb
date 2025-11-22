@@ -27,36 +27,39 @@ L'architecture combine une API REST en **Flask** et une interface web en **HTML/
 
 ```
 part4/
-│
 ├── backend/
-│ ├── app/
-│ │ ├── api/
-│ │ │ └── v1/
-│ │ │ └── init.py
-│ │ ├── models/
-│ │ ├── persistence/
-│ │ ├── services/
-│ │ ├── extensions.py
-│ │ └── init.py
-│ │
-│ ├── instance/
-│ ├── tests/
-│ ├── config.py
-│ ├── hbnb.sql
-│ ├── mermaid.js
-│ ├── requirements.txt
-│ └── run.py
+│   ├── __pycache__/
+│   ├── app/
+│   │   ├── __pycache__/
+│   │   ├── api/
+│   │   │   ├── __pycache__/
+│   │   │   └── v1/
+│   │   │       └── __init__.py
+│   │   ├── models/
+│   │   ├── persistence/
+│   │   ├── services/
+│   │   ├── __init__.py
+│   │   └── extensions.py
+│   ├── instance/
+│   ├── tests/
+│   ├── README.md
+│   ├── config.py
+│   ├── mermaid.js
+│   ├── requirements.txt
+│   └── run.py
 │
 └── frontend/
-├── static/
-│ ├── images/
-│ ├── scripts.js
-│ └── styles.css
-└── templates/
-├── add_review.html
-├── index.html
-├── login.html
-└── place.html
+    ├── static/
+    │   ├── images/
+    │   ├── scripts.js
+    │   └── styles.css
+    ├── templates/
+    │   ├── add_review.html
+    │   ├── index.html
+    │   ├── login.html
+    │   └── place.html
+    ├── README.md
+    └── README.md   (duplicate)
 ```
 
 # 🛠️ Backend
