@@ -5,49 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HBNB - Places</title>
-    <!-- Lien vers le CSS principal -->
     <link rel="stylesheet" href="../static/styles.css">
 </head>
 
 <body>
-    <!-- ==============================
-         Header
-         ============================== -->
     <header>
         <img src="../static/images/logo.png" alt="HBNB Logo" class="logo">
-
         <div class="header-nav">
-            <!-- Liens de navigation principaux -->
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="login.html">
-                    <button class="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                             viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                        </svg>
-                        <div class="text">Login</div>
-                    </button>
-                </a>
-            </div>
+              <a href="index.html">Home</a>
 
-            <!-- Profil utilisateur (caché si non connecté) -->
+              <a href="login.html">
+                <button class="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                       viewBox="0 0 24 24" stroke-width="1.5"
+                       stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                  </svg>
+                  <div class="text">Login</div>
+                </button>
+              </a>
+            </div>
             <div class="user-profile" style="display: none;">
                 <span class="user-name"></span>
                 <svg class="logout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                    <path
+                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                 </svg>
             </div>
         </div>
     </header>
 
-    <!-- ==============================
-         Main content
-         ============================== -->
     <main>
-        <!-- Filtre de prix -->
         <div class="price-filter">
             <label for="price">Filter by price:</label>
             <select id="price">
@@ -60,22 +50,15 @@
             </select>
         </div>
 
-        <!-- Liste des lieux (remplie dynamiquement via JS) -->
         <div id="places-list" class="places-list">
-            <!-- Les lieux seront injectés ici par scripts.js -->
+            <!-- Les lieux seront chargés ici -->
         </div>
     </main>
 
-    <!-- ==============================
-         Footer
-         ============================== -->
     <footer class="footer-bottom">
         <p>&copy; 2025 HBNB. All rights reserved.</p>
     </footer>
 
-    <!-- ==============================
-         Scripts
-         ============================== -->
     <script src="../static/scripts.js"></script>
 </body>
 
