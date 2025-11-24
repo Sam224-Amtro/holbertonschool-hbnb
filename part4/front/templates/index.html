@@ -1,65 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HBNB - Places</title>
-    <link rel="stylesheet" href="../static/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HBNB - Home</title>
+<link rel="stylesheet" href="../static/styles.css">
 </head>
-
 <body>
-    <header>
-        <img src="../static/images/logo.png" alt="HBNB Logo" class="logo">
-        <div class="header-nav">
-            <div class="nav-links">
-              <a href="index.html">Home</a>
-
-              <a href="login.html">
-                <button class="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                       viewBox="0 0 24 24" stroke-width="1.5"
-                       stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                  </svg>
-                  <div class="text">Login</div>
-                </button>
-              </a>
-            </div>
-            <div class="user-profile" style="display: none;">
-                <span class="user-name"></span>
-                <svg class="logout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path
-                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                </svg>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="price-filter">
-            <label for="price">Filter by price:</label>
-            <select id="price">
-                <option value="all">All prices</option>
-                <option value="10">$10 or less</option>
-                <option value="20">$20 or less</option>
-                <option value="50">$50 or less</option>
-                <option value="100">$100 or less</option>
-                <option value="200">$200 or less</option>
-            </select>
-        </div>
-
-        <div id="places-list" class="places-list">
-            <!-- Les lieux seront chargés ici -->
-        </div>
-    </main>
-
-    <footer class="footer-bottom">
-        <p>&copy; 2025 HBNB. All rights reserved.</p>
-    </footer>
-
-    <script src="../static/scripts.js"></script>
+<header>
+  <img src="../static/images/logo.png" alt="HBNB Logo" class="logo">
+  <div class="header-nav">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+    </div>
+    <div class="user-profile" style="display:none;">
+      <span class="user-name"></span>
+      <svg class="logout-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+      </svg>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="price-filter">
+    <label>Filter by price:</label>
+    <select>
+      <option value="all">All</option>
+      <option value="50">50</option>
+      <option value="100">100</option>
+      <option value="150">150</option>
+    </select>
+  </div>
+  <div id="places-list"></div>
+</main>
+<script src="../static/scripts.js"></script>
 </body>
-
 </html>
